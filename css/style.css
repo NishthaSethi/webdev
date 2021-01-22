@@ -1,0 +1,225 @@
+@import "utilities.css";
+
+:root{
+  --primary: #3DCFD3;
+  --dark:#161616;
+  --pure:#FFFFFF;
+  --ternary:#898989;
+  --light:#F2F2F2;
+
+}
+html{
+  scroll-behavior: smooth;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing:antialiased;
+}
+body{
+  font-family:'Poppins',sans-sans-serif;
+}
+header
+{
+  background-color: var(--dark);
+  clip-path: polygon(0 0,100% 0,100% 100%,70% 85%,0 100%);
+}
+.container{
+  max-width:1152px;
+  padding:0 15px;
+  margin: 0 auto;
+
+}
+.container .right a{
+  text-decoration: none;
+  color:var(--pure);
+
+}
+header nav .left a
+{
+  color:var(--pure);
+  text-decoration: none;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+header nav .left a:hover{
+  color:var(--primary);
+}
+
+header nav
+{
+  padding: 2rem 0;
+}
+header nav .branding
+{
+  margin-right: 3rem;
+}
+.hero{
+  padding: 3rem 0;
+}
+.hero .left img{
+  width:400px;
+  margin-bottom: -1.6rem;
+}
+.hero .right{
+  color: var(--pure);
+}
+.hero .right h6{
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+.hero .right h1{
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+
+}
+.hero .right h1 span{
+  color:var(--primary);
+}
+
+.hero .right .p
+{
+  line-height:1.9;
+  margin-bottom: 2rem;
+}
+.hero .right{
+  margin-right: -4rem;
+  margin-top: -7rem;
+}
+.hero .right a{
+  text-decoration: none;
+  color:var(--primary);
+}
+section{
+  padding:6rem 0;
+}
+
+section.about .about-me-img{
+  height: 450px;
+
+}
+section.about h1{
+  margin-bottom: 2rem;
+  margin-left:3rem;
+  font-size: 1.6rem;
+  font-weight:500;
+}
+
+section.about h1 span{
+  color:var(--primary);
+}
+
+section.about h3{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+  font-weight: 500;
+}
+
+section.about p{
+  font-family:'Poppins',sans-serif;
+  margin-left: 3rem;
+  color:var(--ternary);
+  line-height:1.9;
+  margin-bottom: 2rem;
+}
+section.about .social{
+  margin-left: 3rem;
+  display:flex;
+
+}
+section.about .social a{
+  background-color: var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: :35px;
+  height:35px;
+  border-radius: 50%;
+  margin-right:0.6rem;
+  transition:all 0.3s ease;
+}
+
+section.about .social a img{
+  width: 100%;
+  height:100%;
+  padding:0.5rem;
+}
+section.about .social a:hover{
+ background-color: var(--primary);
+}
+
+section.intern{
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../images/camera.png);
+  color: var(--pure);
+  clip-path: polygon(0 0,100% 0,100% 100%,65% 80%,0 100%);
+  padding-bottom:14rem;
+}
+section.intern h1{
+  font-size:2rem;
+  margin-bottom:0.5rem;
+}
+section.intern a{
+  text-decoration: none;
+  color:var(--pure);
+}
+section.intern h1 span{
+  color: var(--primary);
+}
+section.intern p{
+  margin-bottom: 2rem;
+  font-family: 'Poppins',sans-serif;
+}
+
+.section-heading{
+  color: var(--secondary);
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 0.5;
+}
+section.contact h1{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+section.contact h1 span{
+  color:var(--primary);
+}
+section.contact .input-wrap{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+  font-family: 'Poppins',sans-serif;
+}
+section.contact .input-wrap-2{
+  display: flex;
+  flex-direction: column;
+}
+section.contact input{
+  padding: 0.5rem;
+
+}
+section.contact .input-wrap-2 input{
+  margin-bottom: 2rem;
+}
+section.contact .input-wrap-2 textarea{
+  padding:0.5rem;
+  font-family: 'Poppins',sans-serif;
+}
+section.contact .btn-wrapper{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer{
+  background-color: var(--dark);
+  text-align: center;
+  color: var(--pure);
+  padding: 5rem;
+}
